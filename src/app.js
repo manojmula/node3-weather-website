@@ -76,7 +76,7 @@ app.get('/weather', (req, res)=>
             })
         }
 
-            const discription = "The sky is "+forecastData.description + "." + "It is currently "+ forecastData.temperature+" degress out. There is a "+forecastData.precipitation+"% chance of rain." 
+            const discription = forecastData.description + "." + "It is currently "+ forecastData.temperature+" degress out. There is a "+forecastData.precipitation+"% chance of rain." 
 
             res.send({
                 location : place,
